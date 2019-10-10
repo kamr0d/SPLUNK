@@ -1,9 +1,14 @@
 #!/bin/bash
 
-echo "BAJANDO FIREWALL"
-systemctl stop firewalld
-systemctl disable firewalld
-systemctl status firewalld
+#echo "BAJANDO FIREWALLD"
+#systemctl stop firewalld
+#systemctl disable firewalld
+#systemctl status firewalld
+echo "FIREWALLD RULES"
+firewall-cmd --zone=public --permanent --add-port=8000/tcp
+firewall-cmd --zone=public --permanent --add-port=8089/tcp
+firewall-cmd --zone=public --permanent --add-port=8065/tcp
+firewall-cmd --zone=public --permanent --add-port=5514/udp
 sleep 3
 echo "EDITANDO RC.LOCAL"
 sleep 3
