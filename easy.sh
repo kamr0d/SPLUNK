@@ -48,7 +48,7 @@ sleep 3
 echo -----------------------------------------------------------------------
 echo "ASIGNANDO PERMISOS"
 chown -R splunk:splunk splunk
-ll
+ls -lrth
 echo -----------------------------------------------------------------------
 echo "INICIANDO INSTALACION"
 sleep 3
