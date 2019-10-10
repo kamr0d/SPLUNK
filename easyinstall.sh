@@ -35,8 +35,7 @@ echo
 echo "DESCOMPRIMIENDO SPLUNK"
 cd /opt
 pwd
-ll
-sleep 3
+sleep 4
 tar -xvzf splunk-7.2.6-c0bf0f679ce9-Linux-x86_64.tgz
 sleep 3
 echo "ARCHIVO DESCOMPRIMIDO"
