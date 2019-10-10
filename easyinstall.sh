@@ -1,5 +1,9 @@
 #!/bin/bash
-
+echo "BAJANDO FIREWALL
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl status firewalld
+sleep 3
 echo "EDITANDO RC.LOCAL"
 sleep 3
 echo if test -f /sys/kernel/mm/transparent_hugepage/enabled >> /etc/rc.local
